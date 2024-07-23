@@ -24,7 +24,7 @@ const Login = () => {
     e.preventDefault();
     dispatch({ type: "LOGIN_START" });
     try {
-      const res = await  fetch(`http://localhost:4000/api/v1/auth/login`, {
+      const res = await  fetch(`https://teerthsaathi-backend.vercel.app/auth/login`, {
         method: "post",
         headers: {
           "Content-type": "application/json",
