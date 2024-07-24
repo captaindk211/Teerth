@@ -14,10 +14,13 @@ import bodyParser from "body-parser";
 dotenv.config();
 const app = express();
 const port = process.env.PORT || 8000;
+
 const corsOptions = {
-  origin: "https://teerth-saathi.vercel.app",
-  credentials: true,
+  origin: 'https://teerth-saathi.vercel.app', // Replace with your frontend origin
+  credentials: true, // Include credentials if needed for authentication
+  optionsSuccessStatus: 200, // Optional: Send success status for preflight requests
 };
+
 
 //for database connection
 mongoose.set("strictQuery", false);
