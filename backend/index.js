@@ -46,9 +46,9 @@ app.use("/api/v1/users", userRoute);
 app.use("/api/v1/review", reviewRoute);
 app.use("/api/v1/booking", bookingRoute);
 
-/*app.use("/", (req, res) => {
+app.use("/", (req, res) => {
   res.send("Hari Bol");
-});*/
+});
 app.listen(port, () => {
   connect();
   console.log("server listening on port", port);
